@@ -1,0 +1,118 @@
+@font-face{
+	font-family: 'Wemakeprice-SemiBold';
+	src : url("../fonts/Wemakeprice-SemiBold.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: 'NEXON Lv2';
+	src : url("../fonts/NEXON Lv2 Gothic Medium.ttf") format("woff");
+}
+
+.tangent_img_div{
+width : 600px;
+height: 80px;	
+position: absolute;
+top : -20%;
+left: 0%;
+}
+
+.tangent_img_css{
+width : 670px;
+height: 80px;
+position: absolute;
+left: -10%;
+border: 0;
+outline: 0;
+}
+
+.korea_img_div{
+width : 20%;
+height: 50%;
+position: absolute;
+top : 0%;
+left : 87%;
+
+}
+
+.korea_img_css{
+width : 80%;
+height: 215%;
+position: absolute;
+left : -5%;	
+border: 0;
+outline: 0;
+}
+
+.tan_icon{
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-200px;
+	width:500px;
+	height:400px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-family: 'Wemakeprice-SemiBold';
+}
+
+.aboutus_btn{
+	text-align: center;
+	line-height : 350px;
+	background-color: #0b0205;
+	color: white;
+	margin: 5px 5px 5px 5px;
+	width : 200px;
+	height: 200px;
+	transition-duration: 1s;
+}
+
+.aboutus_btn:hover{
+	transform: rotate(-45deg);
+}
+
+.opr_btn{
+	line-height : 350px;
+	text-align: center;
+	background-color: #0b0205;
+	color: white;
+	margin: 5px 5px 5px 5px;
+	width : 200px;
+	height: 200px;
+	transition-duration: 1s;
+}
+
+.opr_btn:hover{
+	transform: rotate(-45deg);
+}
+
+.manual_btn{
+	line-height : 350px;
+	text-align: center;
+	background-color: #0b0205;
+	color: white;
+	margin: 5px 5px 5px 5px;
+	width : 200px;
+	height: 200px;
+	transition-duration: 1s;
+}
+
+.manual_btn:hover{
+	transform: rotate(-45deg);
+}
+
+.moter_btn{
+	line-height : 350px;
+	text-align: center;
+	background-color: #0b0205;
+	color: white;
+	margin: 5px 5px 5px 5px;
+	width : 200px;
+	height: 200px;
+	transition-duration: 1s;
+}
+
+.moter_btn:hover{
+	transform: rotate(-45deg);
+}
