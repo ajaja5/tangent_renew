@@ -9,7 +9,7 @@
 		<!-- 드라이버 클래스 이름이 변경됨 -->
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
 		<!-- 연결문자열에 log4jdbc가 추가됨 -->
-		<property name="url" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="url" value="jdbc:log4jdbc:oracle:thin:@183.102.137.146:1521:xe" />
 		<property name="username" value="SYSTEM" />
 		<property name="password" value="22208678" />
 	</bean>

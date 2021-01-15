@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c"
 uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<link href="./resources/css/mainpage.css" rel="stylesheet" />  
+<link href="./resources/css/comtool.css" rel="stylesheet" />  
 <link href="./resources/css/recommon.css" rel="stylesheet" />  
 <link href="./resources/css/common.css" rel="stylesheet" /> 
 <meta charset="UTF-8">
@@ -14,39 +14,26 @@ uri="http://java.sun.com/jsp/jstl/core" %>
 </head>
 
 <body>
-
-<section class="tan_main">
-<jsp:include page="/WEB-INF/views/common/Header.jsp" flush="true" />
-<jsp:include page="/WEB-INF/views/common/reheader.jsp" flush="true" />
-<div class="tan_icon">
-
-<div class="tangent_img_div">
-<img class="tangent_img_css" src="resources/images/tangent.png" >
+<section class="main_css">
+<div class="main_logo">
+<p class="main_logo_font" style="opacity: 0.3;">TANGENT KOREA</p>
 </div>
-
-<div class="aboutus_btn">
-ABOUT_US
+<div class="menu_flex">
+<div class="guide">
+GUIDE
 </div>
-
-<div class="opr_btn">
-OPR
+<div class="model">
+MODEL
 </div>
-
-<div class="manual_btn">
-MANUAL
+<div class="other">
+OTHER
 </div>
-
-<div class="moter_btn">
-MOTER STARTER
+<div class="about">
+ABOUT
 </div>
-
-<div class="korea_img_div">
-<img class="korea_img_css" src="resources/images/korea.png">
-</div>
-
 </div>
 </section>
-<footer>
+<footer class="footer_main_css">
 <jsp:include page="/WEB-INF/views/common/Footer.jsp" flush="true" />
 </footer>
 
