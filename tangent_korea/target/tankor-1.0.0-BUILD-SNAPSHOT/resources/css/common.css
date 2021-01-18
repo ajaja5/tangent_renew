@@ -32,7 +32,7 @@ animation : btn_intro 5.5s forwards; animation-iteration-count: 1; }
 animation : btnfont_intro 5.5s forwards; animation-iteration-count: 1; }
 
 .guide:hover, .model:hover, .other:hover, .about:hover,.guide_font:hover, .model_font:hover, .other_font:hover, .about_font:hover{
-color: white; opacity: 1.0; }
+color: white; opacity: 1.5; }
 
 @keyframes btn_intro{ 0%{background-color: #2F2E2E; color: #2F2E2E; box-shadow: 0 0 0 0px #000000;} 
 100%{background-color: #000000; color: white; box-shadow: 0 0 0 5px #000000;} }

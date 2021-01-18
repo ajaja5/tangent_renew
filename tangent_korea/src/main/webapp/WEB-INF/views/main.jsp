@@ -16,8 +16,9 @@ uri="http://java.sun.com/jsp/jstl/core" %>
 <body>
 <section class="main_css">
 <div class="main_logo">
-<p class="main_logo_font">TANGENT KOREA</p>
+
 </div>
+<p class="main_logo_font">TANGENT KOREA</p>
 <div class="on_intro">
 </div>
 <div class="under_intro">

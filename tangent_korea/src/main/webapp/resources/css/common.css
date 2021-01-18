@@ -2,13 +2,19 @@ html,body{ height: 100%; margin: 0; padding: 0; /*overflow-x : hidden;*/ }
 
 .main_css{display: flex; flex-direction: column; width:100%; height: 100%;}
 
-.main_logo{flex: 1; width:100%; height:35%; background-color: #000000; text-align: center;
-display: table; font-size: 8.0vw; color:#2F2E2E; line-height: 9vw;  animation : tan_logo 0.5s; animation-iteration-count: 1; }
-@media screen and (max-width: 1024px) { .main_logo{ line-height: 13vw; } }
+.main_logo{flex: 1; width:100%; height:35%; background-color: #000000; }
 
-@keyframes tan_logo{0%{ color: #2F2E2E; } 50%{ color: white; } 100%{ color: #2F2E2E; } }
+@keyframes tan_logo{0%{transform: translateY(0%);} 20%{ transform: translateY(-75%); } 30%{color: #505050;} 
+32%{color: #5A5A5A;} 34%{color: #646464;} 36%{color: #6E6E6E;} 
+38%{color: #787878;} 40%{color: #B4B4B4;} 42%{color: #BEBEBE;}
+44%{color: #C8C8C8;} 46%{color: #D2D2D2;} 48%{color: #DCDCDC;}
+50%{color: white; transform: translateY(-75%);} 55%{color: #DCDCDC; } 65%{color: #D2D2D2;} 
+70%{color: #C8C8C8;} 75%{color: #BEBEBE;} 80%{color: #B4B4B4;} 
+84%{color: #787878;} 88%{color: #6E6E6E;} 92%{color: #646464;} 
+96%{color: #5A5A5A;} 100%{ color: #505050;transform: translateY(-75%);}}
 
-.main_logo_font{display: table-cell; vertical-align: bottom; }
+.main_logo_font{position: absolute; top: 20%; left:15%; animation : tan_logo 3.5s forwards; animation-iteration-count: 1; 
+ font-size: 8.0vw; color:#2F2E2E;}
 
 .on_intro{width:100%; height:37.5%; position: absolute; top:33%; background-color: black; z-index: 2; 
 animation : tanup_intro 1.5s forwards; animation-iteration-count: 1;}
