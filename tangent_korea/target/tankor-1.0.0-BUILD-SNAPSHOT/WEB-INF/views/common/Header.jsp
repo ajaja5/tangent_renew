@@ -3,33 +3,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="./resources/css/mainpage.css" rel="stylesheet" />  
 <meta charset="UTF-8">
-<script type="text/javascript">
-	window.onload = function(){
-		var header = document.getElementById('header_btn_pg');
-		header.onclick = function() {
-			alert('클릭');
-			
-		}
-	}
-</script>
+
 </head>
 <body>
-<header class="header_css">
-<img class="header_img_logo" src="resources/images/tanlogo.png">
-
-<div id="header_btn_pg"><p class="header_font_pg">PG OPR</p></div>
-
-<div id="header_btn_msr"><p class="header_font_msr">MOTOR STARTER Relay-leader</p></div>
-
-<div id="header_btn_ss"><p class="header_font_ss">SOLAR SYSTEM</p></div>
-
-<div id="header_btn_dd"><p class="header_font_dd">DAKA DENTAL</p></div>
-
-<div id="header_btn_grt"><p class="header_font_grt">GENERATOR</p></div>
-
-<div id="header_btn_eng"><p class="header_font_eng">ENGLISH</p></div>
-</header>
+        <nav id="topMenu" >
+                <ul>
+                        <li><a class="menuLink" href="#">About us</a></li>
+                        <li><a class="menuLink" href="#">PG OPR</a></li>
+                        <li><a class="menuLink" href="#">MSR</a></li>
+                        <li><a class="menuLink" href="#">ITEM COORDINATION</a></li>
+                        <li><a class="menuLink" href="#">MANUAL</a></li>
+                </ul>
+        </nav>
 </body>
-
 </html>

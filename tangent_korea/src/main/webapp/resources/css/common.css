@@ -1,14 +1,43 @@
-html,body{ height: 100%; margin: 0; padding: 0; }
+html,body{ height: 100%; margin: 0; padding: 0; /*overflow-x : hidden;*/ }
 
 .main_css{display: flex; flex-direction: column; width:100%; height: 100%;}
 
-.main_logo{flex: 1; width:100%; height:45%; background-color: black;   }
+.main_logo{flex: 1; width:100%; height:35%; background-color: #000000; text-align: center;
+display: table; font-size: 8.0vw; color:#2F2E2E; line-height: 9vw;  animation : tan_logo 0.5s; animation-iteration-count: 1; }
+@media screen and (max-width: 1024px) { .main_logo{ line-height: 13vw; } }
 
-.main_logo_font{font-size: 8.0vw; color:white; position: absolute; top:8.9%; left: 15%; }
+@keyframes tan_logo{0%{ color: #2F2E2E; } 50%{ color: white; } 100%{ color: #2F2E2E; } }
 
-.menu_flex{flex:2; width:100%; height:55%; background-color: black; opacity: 0.8; display: inline-block; vertical-align: middle; }
+.main_logo_font{display: table-cell; vertical-align: bottom; }
 
-.guide{ background-color: yellow; opacity: 1.0; color: white; width:15%; height: 14%; padding: 10px;}
+.on_intro{width:100%; height:37.5%; position: absolute; top:33%; background-color: black; z-index: 2; 
+animation : tanup_intro 1.5s forwards; animation-iteration-count: 1;}
+
+.under_intro{width:100%; height:37.5%; position: absolute; top:70.5%; background-color: black; z-index: 2; 
+animation : tandown_intro 1.5s forwards; animation-iteration-count: 1;}
+
+@keyframes tanup_intro{0%{ transform: translateY(0%); position: absolute; top:34%;} 50%{height:2%;} 100%{ transform: translateY(-37.5%); height:0%;} }
+
+@keyframes tandown_intro{0%{ transform: translateY(0%); } 100%{ transform: translateY(37.5%); height:0%; position: absolute; top:100%;}}
+
+.menu_flex{flex:2; width:100%; height:55%; background-color: #2F2E2E; display :flex; justify-content:space-around;}
+
+.guide, .model, .other, .about{ margin-top: 300px; margin-right: 10px; margin-bottom: 30px; margin-left: 30px; 
+background-color: #000000; color: white; opacity: 0.6; width:15%; height: 20%; font-size: 3vw; line-height: 150px; text-align : center;  
+vertical-align: middle; border-style: solid; border-top-left-radius:0.2em; border-top-right-radius:0.2em; 
+border-bottom-right-radius:0.2em; border-bottom-left-radius:0.2em; box-shadow:  0 0 0 5px #000000; z-index: 1;
+animation : btn_intro 5.5s forwards; animation-iteration-count: 1; }
+
+.guide_font, .model_font, .other_font, .about_font{ color: white; opacity: 0.6; font-size: 1.0vw; line-height: 50px;
+animation : btnfont_intro 5.5s forwards; animation-iteration-count: 1; }
+
+.guide:hover, .model:hover, .other:hover, .about:hover,.guide_font:hover, .model_font:hover, .other_font:hover, .about_font:hover{
+color: white; opacity: 1.5; }
+
+@keyframes btn_intro{ 0%{background-color: #2F2E2E; color: #2F2E2E; box-shadow: 0 0 0 0px #000000;} 
+100%{background-color: #000000; color: white; box-shadow: 0 0 0 5px #000000;} }
+
+@keyframes btnfont_intro{0%{color:#2F2E2E; } 100%{color: white; opacity:0.6;} }
 
 .header_img_logo{ height:100%; -webkit-filter: invert(50%); filter: invert(50%);}
 
