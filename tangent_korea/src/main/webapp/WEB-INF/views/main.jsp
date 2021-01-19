@@ -41,10 +41,11 @@ ABOUT
 <p class="about_font">탄젠트 고객지원</p>
 </div>
 </div>
-</section>
 <footer class="footer_main_css">
 <jsp:include page="/WEB-INF/views/common/Footer.jsp" flush="true" />
 </footer>
+</section>
+
 
 </body>
 </html>
