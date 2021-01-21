@@ -6,29 +6,50 @@ uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<link href="./resources/css/common.css" rel="stylesheet" />  
-<meta charset="UTF-8">
-
+<link href="./resources/css/home.css" rel="stylesheet" />
+<link href="./resources/css/comtool.css" rel="stylesheet" />  
+<link href="./resources/css/recommon.css" rel="stylesheet" />  
+<link href="./resources/css/common.css" rel="stylesheet" />
 </head>
 
 <body>
-<header><jsp:include page="/WEB-INF/views/common/Header.jsp" flush="true" /></header>
-<section class="main_contents">
-<p class="main_contents_text">온라인으로 쇼핑하고 무료 배송, 스페셜리스트 지원등의 혜택을 받으세요.</p>
-<div class="main_contents_a">
-test1
+<section class="area">
+  <div class="circle">
+<div class="tri_angle1">
+
 </div>
-<div class="main_contents_b">
-test2
-</div>
-<div class="main_contents_c">
-test3
-</div>
-<div class="main_contents_d">
-test4
 </div>
 
-</section>
+<div class="circle1">
+
+</div>
+
+<div class="circle2">
+
+</div>
+
+<div class="circle3">
+
+</div>
+<div class="angle1">
+</div>
+<div class="angle2">
+</div>
+<div class="angle3">
+</div>
+<div class="angle4">
+</div>
+<div class="angle5">
+</div>
+<div class="angle6">
+</div>
+<div class="angle7">
+</div>
+<div class="angle8">
+</div>
+
+<img class="boom" src="resources/images/boom.png"/>
+
 
 <!-- <section class="body_css">
 <table border="1">
@@ -53,6 +74,10 @@ test4
 		</c:forEach>
 	</table>
 	</section>  -->
+	</section>
+	<footer class="footer_main_css">
 <jsp:include page="/WEB-INF/views/common/Footer.jsp" flush="true" />	
+</footer>
 </body>
+
 </html>

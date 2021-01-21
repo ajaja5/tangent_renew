@@ -2,7 +2,6 @@ package com.tangent.tankor.controller;
 
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
@@ -11,10 +10,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.tangent.tankor.dto.BoardDTO;
+
 import com.tangent.tankor.service.BoardService;
+
+
 
 
 
@@ -25,7 +26,7 @@ import com.tangent.tankor.service.BoardService;
 public class HomeController {
 	@Inject
 	BoardService boardService;
-	
+
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 * @throws Exception 
@@ -41,7 +42,12 @@ public class HomeController {
 		List<BoardDTO> list = boardService.boardList(); // list 변수에 결과 값을 담는다
 		model.addAttribute("list", list); // model에 데이터 값을 담는다
 		return "content/aboutus";
+		}
+	
+	@RequestMapping(value= {"/22208678"}, method= RequestMethod.GET)
+	public String erp(HttpServletRequest req, Model model) throws Exception {
 		
-	}
+		return "erp/mainerp";
+		}
 	
 }

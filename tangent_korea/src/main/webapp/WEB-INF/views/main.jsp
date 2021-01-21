@@ -16,29 +16,33 @@ uri="http://java.sun.com/jsp/jstl/core" %>
 <body>
 <section class="main_css">
 <div class="main_logo">
-
+<div class="main_logo_font">TANGENT KOREA</div>
 </div>
-<p class="main_logo_font">TANGENT KOREA</p>
+
+
+<div class="menu_flex">
 <div class="on_intro">
 </div>
 <div class="under_intro">
 </div>
-<div class="menu_flex">
+<div class="loding_ani">
+
+</div>
 <div class="guide">
 GUIDE
-<p class="guide_font">사용자 모델 선택</p>
+<p class="guide_font">사용자 모델 선택</p><br>
 </div>
 <div class="model">
 MODEL
-<p class="model_font">과전류 보호 계전기</p>
+<p class="model_font">과전류 보호계전기</p><br>
 </div>
 <div class="other">
 OTHER
-<p class="other_font">특수모델 이전모델</p>
+<p class="other_font">특수모델 이전모델</p><br>
 </div>
 <div class="about">
 ABOUT
-<p class="about_font">탄젠트 고객지원</p>
+<p class="about_font">탄젠트 고객지원</p><br>
 </div>
 </div>
 <footer class="footer_main_css">

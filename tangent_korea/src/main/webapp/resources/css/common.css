@@ -1,4 +1,4 @@
-html,body{ height: 100%; margin: 0; padding: 0; overflow-y : hidden; }
+html,body{ height: 100%; margin: 0; padding: 0; overflow: auto;}
 
 .footer_text{font-size: 1.2vw; width : 100%; height : 100px; position : absolute; 
 	bottom : 60%; background-color: black; color: white; text-align: center; font-family:'돋움';}
@@ -10,25 +10,27 @@ html,body{ height: 100%; margin: 0; padding: 0; overflow-y : hidden; }
 
 .main_css{display: flex; flex-direction: column; width:100%; height: 100%;}
 
-.main_logo{flex: 1; width:100%; height:35%; background-color: #000000; }
+.main_logo{flex: 1; width:100%; height:35%; background-color: #000000; position: relative; z-index: 6; text-align: center; }
 
-@keyframes tan_logo{0%{transform: translateY(0%);} 20%{ transform: translateY(-78%); } 30%{color: #505050;} 
+.main_logo_font{position: absolute; top: 98%; left:15%; animation : tan_logo 5.5s forwards; 
+animation-iteration-count: 1; font-size: 8vw; color:#2F2E2E; }
+
+@keyframes tan_logo{0%{transform: translateY(0%);color:} 20%{ transform: translateY(-78%); } 30%{color: #505050;} 
 32%{color: #5A5A5A;} 34%{color: #646464;} 36%{color: #6E6E6E;} 
 38%{color: #787878;} 40%{color: #B4B4B4;} 42%{color: #BEBEBE;}
 44%{color: #C8C8C8;} 46%{color: #D2D2D2;} 48%{color: #DCDCDC;}
 50%{color: white; transform: translateY(-78%);} 55%{color: #DCDCDC; } 65%{color: #D2D2D2;} 
 70%{color: #C8C8C8;} 75%{color: #BEBEBE;} 80%{color: #B4B4B4;} 
 84%{color: #787878;} 88%{color: #6E6E6E;} 92%{color: #646464;} 
-96%{color: #5A5A5A;} 100%{ color: #505050;transform: translateY(-78%);}}
+96%{color: #5A5A5A;} 100%{ color:#2F2E2E; transform: translateY(-78%);}}
 
-.main_logo_font{position: absolute; top: 12%; left:15%; animation : tan_logo 5.5s forwards; animation-iteration-count: 1; 
- font-size: 8.0vw; color:#2F2E2E;}
+.loding_ani{}
 
-.on_intro{width:100%; height:25.5%; position: absolute; top:23.1%; background-color: black; z-index: 2; 
-animation : tanup_intro 3.5s forwards; animation-iteration-count: 1;}
+.on_intro{width:100%; height:29.5%; position: absolute; top:21.1%; background-color: black; z-index: 5; 
+animation : tanup_intro 3.5s forwards; animation-iteration-count: 1; animation-delay:2s;}
 
-.under_intro{width:100%; height:25%; position: absolute; top:50.3%; background-color: black; z-index: 2; 
-animation : tandown_intro 3.5s forwards; animation-iteration-count: 1;}
+.under_intro{width:100%; height:25%; position: absolute; top:50.3%; background-color: black; z-index: 5; 
+animation : tandown_intro 3.5s forwards; animation-iteration-count: 1; animation-delay:2s;}
 
 @keyframes tanup_intro{0%{ transform: translateY(0%);} 
 50%{height:0%;transform: translateY(-300px); } 
@@ -44,10 +46,10 @@ animation : tandown_intro 3.5s forwards; animation-iteration-count: 1;}
 background-color: #000000; color: white; opacity: 0.6; width:15%; height: 20%; font-size: 3vw; text-align : center;  
 vertical-align: middle; line-height: 115px; border-style: solid; border-top-left-radius:0.2em; border-top-right-radius:0.2em; 
 border-bottom-right-radius:0.2em; border-bottom-left-radius:0.2em; box-shadow:  0 0 0 5px #000000; z-index: 1;
-animation : btn_intro 5.5s forwards; animation-iteration-count: 1; font-family:'돋움';}
+animation : btn_intro 3.5s forwards; animation-iteration-count: 1; animation-delay:2s; font-family:'돋움';}
 
 .guide_font, .model_font, .other_font, .about_font{ color: white; opacity: 0.6; font-size: 1.0vw; line-height: 130px;
-animation : btnfont_intro 5.5s forwards; animation-iteration-count: 1; font-family:'돋움';}
+animation : btnfont_intro 5.5s forwards; animation-iteration-count: 1; animation-delay:2s; font-family:'돋움';}
 
 .guide:hover, .model:hover, .other:hover, .about:hover,.guide_font:hover, .model_font:hover, .other_font:hover, .about_font:hover{
 color: white; opacity: 1.5; }
